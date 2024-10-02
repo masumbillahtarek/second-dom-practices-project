@@ -4,8 +4,103 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alpha Clash Pro</title>
+    <!--Tailwind and DaisyUi-->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.11/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<!--Custom css-->
+<link rel="stylesheet" href="styles/style.css">
 </head>
-<body>
-    
+<body class="font-poppins" >
+  <main class="bg-[#010313] min-h-screen bg-[url(images/background.png)] bg-no-repeat bg-center">
+    <!--Home Screen-->
+    <section class=" home min-h-screen text-[#fff] flex flex-col justify-center  items-center   ">
+<div class="flex flex-col  items-center">
+    <h1 class="text-8xl font-anton uppercase">Alpha Clash Pro</h1>
+<p class="my-4">Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
+<button class="bg-white text-black px-4 py-3 rounded-lg">Play Now</button>
+</div>
+    </section>
+    <!--PlayGround-->
+    <section class="play-ground hidden">
+<div class="flex flex-col justify-center items-center gap-20 py-20">
+    <!--Screen-->
+    <div class="artboard artboard-horizontal phone-6 border-[20px] rounded-2xl border-[#010313CC] bg-[#ffffffB3]">
+<div class="flex justify-center">
+    <p class=" bg-[#010313CC] text-white p-3 rounded-b-lg ">Don't watch keyboard  while playing...</p>
+   
+</div>
+<div class="flex justify-center items-center h-full">
+    <p class="text-black text-9xl font-bold">Y</p>
+</div>
+    </div>
+    <!--Keyboard-->
+   <div>
+    <div class="my-1 flex w-full justify-center gap-1">
+        <kbd class="kbd">q</kbd>
+        <kbd class="kbd">w</kbd>
+        <kbd class="kbd">e</kbd>
+        <kbd class="kbd">r</kbd>
+        <kbd class="kbd">t</kbd>
+        <kbd class="kbd">y</kbd>
+        <kbd class="kbd">u</kbd>
+        <kbd class="kbd">i</kbd>
+        <kbd class="kbd">o</kbd>
+        <kbd class="kbd">p</kbd>
+      </div>
+      <div class="my-1 flex w-full justify-center gap-1">
+        <kbd class="kbd">a</kbd>
+        <kbd class="kbd">s</kbd>
+        <kbd class="kbd">d</kbd>
+        <kbd class="kbd">f</kbd>
+        <kbd class="kbd">g</kbd>
+        <kbd class="kbd">h</kbd>
+        <kbd class="kbd">j</kbd>
+        <kbd class="kbd">k</kbd>
+        <kbd class="kbd">l</kbd>
+      </div>
+      <div class="my-1 flex w-full justify-center gap-1">
+        <kbd class="kbd">z</kbd>
+        <kbd class="kbd">x</kbd>
+        <kbd class="kbd">c</kbd>
+        <kbd class="kbd">v</kbd>
+        <kbd class="kbd">b</kbd>
+        <kbd class="kbd">n</kbd>
+        <kbd class="kbd">m</kbd>
+        <kbd class="kbd">/</kbd>
+      </div>
+   </div>
+    <!--Life-->
+    <div class="flex justify-between mx-20 w-3/4">
+        <button class="flex items-center gap-3 bg-[#894189] rounded-full border-none text-white text-xl p-4">
+            Life
+          <img src="images/life.png" alt="">
+          <span>1</span>
+          </button>
+          <button class="flex items-center gap-3 bg-[#360490] rounded-full border-none text-white text-xl p-4">
+            Score
+          <img src="images/score.png" alt="">
+          <span>1</span>
+          </button>
+    </div>
+</div>
+    </section>
+    <section class="hidden score flex justify-center items-center min-h-screen">
+        <div class="bg-gradient-to-r from-[#FFFFFF8F] to-[#98979700] p-10 rounded-xl">
+            <h2 class="text-white text-5xl font-bold text-center">Score : 14</h2>
+            <div class="flex justify-center my-4">
+                <button class="bg-white text-black p-4 rounded-xl ">Play Again</button>
+            </div>
+            <p class="text-white text-center">Practice will make you Pro</p>
+        </div>
+    </section>
+  </main>
+  <script src="scripts/alpha-clash.js"></script>
 </body>
 </html>

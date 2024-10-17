@@ -88,7 +88,7 @@ function gameOver(){
     // 1. Get the the final score
     const lastScore=getTextElementValueById('current-score');
     console.log(lastScore);
-    setTextElementValueById('last-Score',lastScore);
+    setTextElementValueById('last-score',lastScore);
     //Clear the last selected alphabet highlight
     const currentAlphabet=getElementTextById('current-alphabet');
    // console.log(currentAlphabet);
